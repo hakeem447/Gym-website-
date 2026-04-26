@@ -6,8 +6,8 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-body { background: var(--dark); color: #fff; scroll-behavior: smooth; overflow-x: hidden; }
-
+body {-webkit-overflow-scrolling: touch; background: var(--dark); color: #fff; scroll-behavior: smooth; overflow-x: hidden; }
+  
 /* Navbar Styling */
 header {
     width: 100%; position: absolute; top: 0; left: 0; z-index: 100;
@@ -24,7 +24,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 /* Hero Section */
 .hero {
     height: 100vh; display: flex; align-items: center; padding: 0 8%;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('pexels-olly-3757944.jpg');
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('gym\ banner.jpg');
     background-size: cover; background-position: center;
 }
 .hero-content h3 { color: var(--primary); letter-spacing: 5px; margin-bottom: 10px; font-weight: 800;}
@@ -58,9 +58,9 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .card { height: 450px; border-radius: 15px; position: relative; overflow: hidden; background-size: cover; background-position: center; transition: 0.5s; cursor: pointer; }
 
 /* Update local image names here */
-.card-1 { background-image: url('pexels-olly-3887762 copy.jpg'); }
-.card-2 { background-image: url('pexels-anastasia-shuraeva-4944954.jpg'); }
-.card-3 { background-image: url('pexels-shvetsa-4587320.jpg'); }
+.card-1 { background-image: url('setvice3.jpg'); }
+.card-2 { background-image: url('service.jpg'); }
+.card-3 { background-image: url('service2.jpg'); }
 
 .card-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 20px; background: linear-gradient(transparent, rgba(0,0,0,0.9)); text-align: left; }
 .card:hover { transform: scale(1.03); }
