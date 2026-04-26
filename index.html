@@ -14,7 +14,14 @@
     <header>
         <nav>
             <div class="logo">TITAN<span>FITNESS</span></div>
-            <ul class="nav-links">
+            <!-- Hamburger Menu Icon -->
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -167,6 +174,23 @@
         alert("Hi " + name + "! Welcome to the TITAN SQUAD. Our team will contact you shortly.");
         this.reset();
     });
+
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// மெனு லிங்க் கிளிக் செய்தவுடன் மெனு தானாக மூடிக்கொள்ள
+document.querySelectorAll('.nav-links li a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
 </script>
 
 
