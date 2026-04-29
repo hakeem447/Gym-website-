@@ -165,7 +165,7 @@ form input, form select { padding: 15px; background: #222; border: 1px solid #33
 
 header.sticky {
     background: rgba(0, 0, 0, 0.9);
-    padding: 10px 8%; /* Scroll pannumpodhu navbar size konjam kuraiyum */
+    padding: 10px 8%; 
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     position: fixed;
 }
@@ -182,7 +182,7 @@ header.sticky {
 @media (max-width: 768px) {
     /* 1. Hamburger Icon Styling */
     .hamburger {
-        display: flex; /* Mobile-ல் மட்டும் தெரியும் */
+        display: flex; 
         flex-direction: column;
         cursor: pointer;
         gap: 5px;
@@ -200,7 +200,7 @@ header.sticky {
     .nav-links {
         display: flex; 
         position: fixed;
-        right: -100%; /* ஆரம்பத்தில் வெளியே இருக்கும் */
+        right: -100%; 
         top: 10px;
         
         width: 250px;
@@ -213,7 +213,7 @@ header.sticky {
     }
 
     .nav-links.active {
-        right: 0; /* கிளிக் செய்தவுடன் உள்ளே வரும் */
+        right: 0; 
     }
 
     .nav-links li {
